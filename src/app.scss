@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: #f2f4f5;
+  color: #0008;
+  #app {
+    button {
+      width: 100%;
+      padding: 12px !important;
+      border-radius: 2rem !important;
+      background-color: #198754;
+      color: #ffffff;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    margin: 50px auto;
+    padding: 0 15px;
+    max-width: 450px;
+    form {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      background: #ffffff;
+      border: none;
+      padding: 0 15px 15px 15px;
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+
+      input {
+        border: none !important;
+        padding: 10px !important;
+        border-radius: 2rem !important;
+        background-color: #f2f4f5 !important;
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-weight: bolder;
+      margin: 30px 0;
+    }
+  }
+}
+
+.container button:after {
+  background-clip: padding-box;
+  background-color: #198754;
+  border: solid transparent;
+  border-radius: 2rem;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.container button:main,
+.container button:focus {
+  user-select: auto;
+}
+
+.container button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.container button:disabled {
+  cursor: auto;
+}
